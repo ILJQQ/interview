@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/interview.css">
+    <title>高级前端工程师面试试题</title>
+</head>
+<body>
+    <div class="container">
+        <h1>高级前端工程师面试试题</h1>
+        <ol class="all">
+            <li class="questions">
+                <textarea disabled="disabled">input属于窗体元素,层级显示比flash、其它元素都高。请判断这句话的正确与否。
+
+
+答案:不正确 ( 帧元素优先级最高，表单元素总是比非表单元素优先级高)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">在javascript里，下列选项中不属于数组方法的是:
+                    a)sort() b)length() c)concat() d)reverse()
+
+答案:B
+                </textarea>
+            </li>
+            <li class="questions long">
+                <textarea disabled="disabled" class="long">根据栅格系统的标准用法，错误的是
+                    A．<div class="container"><br><div class="row">
+                    B．<div class="row"><br><div class="col-md-1">
+                    C．<div class="row"><br><div class="container">
+                    D．<div class="col-md-1"><br><div class= "row">
+
+答案:C (Bootstrap 框架的网格系统工作原理如下：
+                        1 、数据行 (.row) 必须包含在容器（ .container ）中，以便为其赋予合适的对齐方式和内距 (padding) 。
+                        2 、在行 (.row) 中可以添加列 (.column) ，但列数之和不能超过平分的总列数，比如12 。
+                        如： <div class="container">
+                                <div class="row">
+                                    <div class="col-md- 4 "></div>
+                                    <div class="col-md- 8 "></div>
+                        3 、具体内容应当放置在列容器（ column ）之内，而且只有列（ column ）才可以作为行容器 (.row) 的直接子元素
+                        4 、通过设置内距（ padding ）从而创建列与列之间的间距。然后通过为第一列和最后一列设置负值的外距（ margin ）来
+                            抵消内距 (padding) 的影响 详： http://www.imooc.com/code/2325D（正确）关于列的嵌套：Bootstrap框架的
+                            网格系统还支持列的嵌套。你可以在一个列中添加一个或者多个行（ row ）容器，然后在这个行容器中插入列。
+                            但在列容器中的行容器（ row ），宽度为 100% 时，就是当前外部列的宽度)
+                </textarea>
+            </li>
+
+            <li class="questions">
+                <textarea disabled="disabled">列表分为两类，一是无序列表，一是有序列表，以下哪个是无序列表？
+                    A．<UL>B．<OL>C．<DIR>D．<DL>
+
+
+
+答案:A ( <ul>无序列表；<ol>有序列表)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">关于下列类的说法错误的是？
+                A．show用来显示一个区块            B．hide用来隐藏一个div
+                C．hidden用来隐藏一个div          D．text-hide将会隐藏掉文字
+
+
+
+答案:B
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">关于嵌套列的用法，错误的是
+        A．<div class=“row”><br><div class=“col-sm-1”>
+        B．<div class=“col-sm-1”><br><div class=“row”><br>
+        C．<div class=“row”><br><div class=“container”><br><div class=“col-xs-1”><br>
+        D．<div class=“container”><br><div class=“row”><br><div class=“col-xs-1”>
+
+答案:C (   栅格系统用于通过一系列的行（row）与列（column）的组合来创建页面布局，你 的内容就可以放入这些创建好的布局中。
+                                下面就介绍一下Bootstrap 栅格系统的工作原理：
+                                “行（row）”必须包含在 .container （固定宽度）或 .container-fluid （100% 宽度）中，
+                                以便为其赋予合适的排列（aligment）和内补（padding）)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">下面哪一个标符可以产生一个水平线？
+                A．<HR>B．<BR>C．<TR>D．<T1>
+
+
+
+答案:A
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">介绍js的基本数据类型。
+                    number,string,boolean,object,undefined 
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">下面有关html5标签说法错误的有？
+                A．<audio>标签定义声音，比如音乐或其他音频流
+                B．<canvas>比如来自一个外部的新闻提供者的一篇新的文章，或者来自blog的文本，亦或是来自其他外部源内容
+                C．<menu>标签定义菜单列表。当希望列出表单控件时使用
+                D．<command>标签定义命令按钮，比如单选按钮、复选框
+
+答案:B (<audio>标签定义声音，比如音乐或其他音频流。 A正确。  <canvas>标签定义图形，比如图表和其他图像。
+       <canvas>标签只是图形容器，您必须使用脚本来绘制图形。 B错误，<article>标签定义外部的内容。比如来自一个外部的新闻提供者
+       的一篇新的文章，或者来自 blog 的文本，或者是来自论坛的文本。亦或是来自其他外部源内容。  <menu>标签定义命令的列表或菜单。
+       <menu>标签用于上下文菜单、工具栏以及用于列出表单控件和命令。 C正确  command 元素表示用户能够调用的命令。
+       <command>标签可以定义命令按钮，比如单选按钮、复选框或按钮。只有当 command 元素位于 menu 元素内时，该元素才是可见的。
+       否则不会显示这个元素，但是可以用它规定键盘快捷键。 D正确。)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">下面属于CSS3新增属性的有？
+            A．box-shadow     B．text-shadow   C．border-radius   D．rgba
+
+
+
+答案:ABCD (A：box-shadow: [<颜色><水平偏移><纵向偏移><模糊半径>] || [<水平偏移><纵向偏移><模糊半径><颜色>];
+         说明:(1) <颜色>和<模糊半径>是可选的, 当<颜色>未指定时, 将使用文本颜色; 当<模糊半径>未指定时, 半径值为0;
+         (2) shadow可以是逗号分隔的列表, 如: box-shadow: 2px 2px 2px #ccc, 3px 3px 3px #ddd;
+         (3) 阴影效果会按照shadow list中指定的顺序应用到元素上;
+         (4) 这些阴影效果有可能相互重叠, 但不会叠加文本本身;
+         (5) 阴影可能会跑到容器的边界之外, 但不会影响容器的大小. B:阴影的参数格式和box-shadow相同;  C:border-radius: r;
+         Box的四个角可以由边框半径来设置弯曲度，其定义方式和border属性类似;  D:rgba(0-255,0-255,0-255,0-1)
+         前三个数值是 RGB 颜色的值, 最后一个数值指代的是元素的透明度 (0 表示透明, 1 表示不透明). )
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">哪些可以给文字加上背景？
+                    A．bg-primary   B．bg-success   C．bg-info   D．bg-warning
+
+
+
+答案:ABCD(   bootstrap主要蓝（bg-primary）、成功绿（bg-success）、信息蓝（bg-info）、警告黄（bg-warning）、危险红（bg-danger）)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">在bootstrap中，关于全局设置的说法，错误的是
+                    A．font-size为14px
+                    B．line-height 设置为 1.428
+                    C．<p>设置了等于 1/2 行高（即 10px）的底部外边距（margin）
+                    D．<p>设置了等于 1/2 行高（即 10px）的底部内边距（padding）
+
+答案:D (Bootstrap 排版、链接样式设置了基本的全局样式。  font-size 设置为 14px，line-height 设置为 1.428。
+       <p>（段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">以下位于<head>间的代码片段是做什么用的
+                    1 <meta name="viewport" content="width=device-width, initial-scale=1">
+                    A．使得页面编码合乎要求B．表示支持响应式设计
+                    C．支持正常的绘制和缩放D．表示针对滚屏进行适当的适配
+
+答案:B ( width - viewport的宽度  height - viewport的高度 initial-scale - 初始的缩放比例
+       minimum-scale - 允许用户缩放到的最小比例 maximum-scale - 允许用户缩放到的最大比例 user-scalable - 用户是否可以手动缩放)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">关于HTTP协议，下面哪个说法是正确的？
+                    A．HTTP协议是有状态协议。
+                    B．以下是一个Http链接的response 的响应头： GET /xxx/xxx/js/lib/test.js HTTP/1.1 Host: 127.0.0.1
+                    Connection: keep-alive Pragma: no-cache Cache-Control: no-cache Accept: */*
+                    C．RESTful 接口中，利用HTTP协议的method字段来描述要对资源操作的方式，比如GET表示获取资源，
+                    POST表示新增一个资源，PUT表示更新资源,DELETE 表示删除资源等等。
+                    D．一个HTTP请求返回的HTTP状态码中，304表示临时重定向。
+
+答案:C (A错误，http是无状态的B错误，后面的是request 头  C正确，GET表示获取资源，POST表示新增一个资源，PUT表示更新资源,
+       DELETE 表示删除资源等等  D错误，状态码304表示：如果客户端发送了一个带条件的 GET 请求且该请求已被允许，而文档的内容
+       （自上次访问以来或者根据请求的条件）并没有改变，则服务器应当返回这个状态码。307表示临时重定向！！！)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">以下关于盒子模型描述正确的是:
+                    A．标准盒子模型中：盒子的总宽度＝左右margin + 左右border + 左右padding + width
+                    B．IE盒子模型中：盒子总宽度＝左右margin + 左右border + width
+                    C．标准盒子模型中：盒子的总宽度＝左右margin + 左右border + width
+                    D．IE盒子模型中：盒子总宽度＝ width
+
+答案:A
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">var emp = new Array(3); for(var i in emp)  以下答案中能与for循环代码互换的是: （选择一项）
+                    A for(var i =0; i<emp; i++) 
+                    B for(var i =0; i<Array(3); i++) 
+                    C for(var i =0; i<emp.length(); i++) 
+                    D for(var i =0; i<emp.length; i++)
+
+答案:D
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">如何让一个区块居中?
+                    A．center   B．center-block  C．horizontal-center      D．vertical-center
+
+
+
+答案:AB
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">关于栅格系统，以下说法正确的是
+                    A．会有自动的padding样式B．会有自动的margin样式
+                    C．其字体默认为14px              D．其box-sizing默认为border-box
+
+
+答案:、ACD (AB：栅格系统的工作原理中有，为了创建列（colume）之间的间隔 需要设置padding,而且 需要设置margin为负值 ，
+           消除第一个和最后一个之间padding的影响。  C：bootstrap将全局的font-size设置为14px; )
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">哪些是正确的辅助类
+                    A．text-muted       B．text-success    C．text-info   D．text-warning
+
+
+
+答案:ABCD
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">在bootstrap中， 关于导航条，下列说法正确的是?
+                    A．应该将被包裹的元素放到navbar-collapse类中
+                    B．表单应该放置于navbar-form内
+                    C．可以使用navbar-left和navbar-right来对齐导航条
+                    D．可以使用navbar-fixed-top和navbar-fixed-bottom来将导航条固定到顶部或底部
+
+答案:ABCD
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">iframe的使用场景有？
+                    A．与第三方域名下的页面共享cookie
+                    B．上传图片，避免当前页刷新
+                    C．左边固定右边自适应的布局
+                    D．资源加载
+
+答案:ABCD (iframe可用在以下几个场景中：  1：典型系统结构，左侧是功能树，右侧就是一些常见的table或者表单之类的。为了每一个功能，
+           单独分离出来，采用iframe。
+           2：ajax上传文件。
+           3：加载别的网站内容，例如google广告，网站流量分析。
+           4： 在上传图片时，不用flash实现无刷新。
+           5： 跨域访问的时候可以用到iframe，使用iframe请求不同域名下的资源)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">设置CSS属性float的值为什么时可取消元素的浮动。
+
+
+
+答案:none (float有四个值left,right,none（默认值）和inherite（从父类继承而来的浮动）)
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">  JS中调用某个函数之前，如何取得该函数最多可以传递多少个参数?该函数被调用时，如果知道传了多少个参数过来?
+
+                假设函数名为fun，那个fun.length就是它最多能接受的参数个数;在fun函数里面，arguments就是用数组装着调用时传过来的所有参数，因此arguments.length就是已经传递过来的参数个数;
+                 </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">使用CSS来格式化网页，共有三种方式，以下哪一种不是：
+                    A．在HEAD中引用B．作为标记来引用
+                    C．在BODY中引用D．作为文件来引用
+
+
+
+答案:B( 样式表允许以多种方式规定样式信息。样式可以规定在单个的 HTML 元素中，在 HTML 页的头元素中，或在一个外部的 CSS 文件中。
+        甚至可以在同一个 HTML 文档内部引用多个外部样式表。
+        外部样式表
+        内部样式表（位于<head>标签内部）
+        内联样式（在 HTML 元素内部）
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">javascript中表达式parseInt(“X8X8”)+parseFloat(„8‟)的结果是什么?
+                    a)8+8 b)88 c)16 d)“8”+‟8 
+
+答案:C
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">关于setTimeout(“check”,10)中说法正确的是
+                    a)程序循环执行10次  b)Check函数每10秒执行一次 
+                    c)10做为参数传给函数check d)Check函数每10毫秒执行一次 
+
+答案:D
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">13 HTML5的离线储存？
+                    localStorage    长期存储数据，浏览器关闭后数据不丢失； sessionStorage  数据在浏览器关闭后自动删除。
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">JS中给全部都是数字元素的数组排序的原生方法是___sort_______，其中使用的是__冒泡__排序方法。
+                例如：array.sort(function(a,b){return a-b;})
+                </textarea>
+            </li>
+
+            <li class="questions">
+                <textarea disabled="disabled">JS如何得到HTTP的请求头信息和返回的头信息?
+                    Javascript中跟response header有关的就两个方法：
+                     getResponseHeader 从响应信息中获取指定的http头 
+                     语法 strValue = oXMLHttpRequest.getResponseHeader(bstrHeader); 
+                     getAllResponseHeaders 获取响应的所有http头 
+                     语法 strValue = oXMLHttpRequest.getAllResponseHeaders(); 需要注意的是，通常，在IE下不能完整的获取header报头数据，只能取到如下header数据： X-Powered-By: X-UA-com#patible: Keep-Alive: Transfer-Encoding: Content-Type: 比如你要获取时间戳，在IE下必须做些特殊处理，需要在后端设置一下，关闭缓存：
+
+                </textarea>
+            </li>
+            <li class="questions long">
+                <textarea disabled="disabled">什么是闭包（closure），为什么要用它？
+                    
+                一、变量的作用域  要理解闭包，首先必须理解Javascript特殊的变量作用域。 变量的作用域无非就是两种：全局变量和局部变量。  Javascript语言的特殊之处，就在于函数内部可以直接读取全局变量。    
+                二、如何从外部读取局部变量？  出于种种原因，我们有时候需要得到函数内的局部变量。但是，前面已经说过了，正常情况下，这是办不到的，只有通过变通方法才能实现。 那就是在函数的内部，再定义一个函数。    
+                三、闭包的概念  上一节代码中的f2函数，就是闭包。 各种专业文献上的“闭包”（closure）定义非常抽象，很难看懂。我的理解是，闭包就是能够读取其他函数内部变量的函数。  由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。
+                </textarea>
+            </li>
+            <li class="questions">
+                <textarea disabled="disabled">针对 jQuery 的优化方法？
+                    1，总是从ID选择器开始继承 
+                    2，在class前使用tag(标签名)  
+                    在jQuery中第二快的选择器是tag(标签)选择器( 比如：$(“head”) )。  跟ID选择器累时，因为它来自原生的getElementsByTagName() 方法。  继续看刚才那段HTML代码： 比如需要选择 红绿 单选框，   那么可以使用一个tag name来限制(修饰)class ，如下所示： var active_light = $(“input.on”); 当然也可以结合 就近的ID，如下所示：  var active_light = $(“#traffic_light input.on”); 在使用tag来修饰class的时候，我们需要注意以下几点：  
+                    （1） 不要使用tag来修饰ID，如下所示： var content = $(“div#content”);  这样一来，选择器会先遍历所有的div元素，然后匹配#content。   （好像jQuery从1.3.1开始改变了选择器核心后，不存在这个问题了。暂时无法考证。）  （2）不要画蛇添足的使用ID来修饰ID，如下所示： var traffic_light = $(“#content #traffic_light”);   3，将jQuery对象缓存起来   把jQuery对象缓存起来 就是要告诉我们 要养成将jQuery对象缓存进变量的习惯。
+                </textarea>
+            </li>
+        </ol>
+    </div>
+    <script src="js/setHeight.js"></script>
+</body>
+</html>
